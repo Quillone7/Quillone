@@ -1,0 +1,72 @@
+body {
+    background-color: #f0f0f0; /* Ciemno-jasnoszary kolor tła */
+}
+
+.container {
+    display: flex;
+}
+
+#led-panel {
+    display: grid;
+    grid-template-columns: repeat(8, 30px);
+    grid-gap: 5px;
+    margin-right: 20px;
+}
+
+#led-panel div {
+    width: 30px;
+    height: 30px;
+}
+
+#color-palette {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 5px;
+}
+
+.color-option {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+#code-output {
+    font-family: monospace;
+    white-space: pre-wrap;
+    margin-left: 20px;
+}
+
+#color-list {
+    font-size: 12px;
+    margin-left: 20px;
+    white-space: pre-wrap;
+}
+
+#bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eee; /* Jasnoszary kolor tła paska */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie elementów w poziomie */
+    align-items: center; /* Wyśrodkowanie elementów w pionie */
+}
+
+#reset-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-right: 10px; /* Dodanie odstępu między przyciskiem a tekstem */
+}
+
+#creator-text {
+    font-size: 10px; /* Mały rozmiar czcionki */
+}
